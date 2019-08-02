@@ -44,6 +44,7 @@ module.exports = {
             .then(dbModel => resjson(dbModel))
             .catch(err => res.status(422).json(err))
     },
+    
 
     // Family Routes
     createFamily: function (req, res) {

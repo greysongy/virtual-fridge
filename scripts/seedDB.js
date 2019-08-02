@@ -7,15 +7,16 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/virtualFridge",
 
 const fridgeSeed = {
     family_id: '8675309',
-    user_id: '6834',
-    items: ['banana', 'peanuts', 'dog food'],
+    user_id: '6835',
+    products: ['banana', 'peanuts', 'dog food'],
     date: Date.now
 }
 
 db.Fridge
     .remove({})
-    .then(() => db.Fridge.collection.insert(fridgeSeed))
+    .then(() => db.Fridge.collection.save(fridgeSeed))
     .then(data => {
+        console.log(data.result)
         console.log(data.result.n + " records inserted!");
         process.exit(0);
     })
@@ -31,7 +32,7 @@ const familySeed = {
 
 db.Family
     .remove({})
-    .then(() => db.Family.collection.insert(familySeed))
+    .then(() => db.Family.collection.save(familySeed))
     .then(data => {
         console.log(data.result.n + " records inserted!");
         process.exit(0);
@@ -51,7 +52,7 @@ const userSeed = {
 
 db.User
     .remove({})
-    .then(() => db.User.collection.insert(userSeed))
+    .then(() => db.User.collection.save(userSeed))
     .then(data => {
         console.log(data.result.n + " records inserted!");
         process.exit(0);

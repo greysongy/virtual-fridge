@@ -3,9 +3,8 @@ const Schema = mongoose.Schema;
 const fridgeSchema = new Schema({
     family_id: { type: String },
     user_id: { type: String, required: true },
-    items: {
-        type: String, 
-        required: false
+    products: {
+        type: Array
     },
     date: {
         type: Date,
