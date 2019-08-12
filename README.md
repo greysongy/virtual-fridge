@@ -1,6 +1,6 @@
 # Fridge
 
-[Check out the deployed version!](https://fathomless-ocean-69359.herokuapp.com/)
+[Check out the deployed version!](https://team-fridge.herokuapp.com/)
 
 
 As young adults, we spend hundreds of dollars eating out when we could 
