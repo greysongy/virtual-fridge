@@ -12,7 +12,7 @@ easily make food with the ingredients at home.
 
 <img src="./client/src/images/ingredients2.png">
 
-<img src="./client/src/images/RecipePage.PNG">
+<img src="./client/src/images/recipePageNew.png">
 
 <img src = "./client/src/images/grocery2.png">
 
